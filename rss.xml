@@ -36,7 +36,7 @@ post：&amp;lt;?php system(&#39;ls&#39;);?&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;web80&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web80&#34;&gt;#&lt;/a&gt; Web80&lt;/h1&gt;
 &lt;p&gt;上题中 input 的 php 大写绕过 jie 还能用&lt;br /&gt;
-&lt;img data-src=&#34;%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_2.png&#34; alt=&#34;Image-1&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_2.png&#34; alt=&#34;Image-1&#34; /&gt;&lt;br /&gt;
 php 和 data 伪协议都用不了了，可以包含日志文件&lt;br /&gt;
 通过 Wappalyzer 得知中间件是 Nginx&lt;/p&gt;
 &lt;blockquote&gt;
